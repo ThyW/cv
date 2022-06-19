@@ -1,0 +1,181 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Template
+% Version 1.0 (28/1/19)
+%
+% This template originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.45\textwidth} % 45% of the page width for name
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% If your name is very short, use just one of the lines below
+	% If your name is very long, reduce the font size or make the minipage wider and reduce the others proportionately
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Ján}}}}} % First name
+	
+	\colorbox{black}{{\HUGE\textcolor{white}{\textbf{\MakeUppercase{Kapko}}}}} % Last name
+	
+	\vspace{6pt}
+	
+	{\huge Študent} % Career or current job title
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the first row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	\icon{MapMarker}{12}{Bratislava}\\
+	\icon{Phone}{12}{+421 948 313 129}\\
+	\icon{Envelope}{12}{\href{mailto:kamo.bavmesa@gmail.com}{\small{kamo.bavmesa@gmail.com}}}\\	
+\end{minipage}
+\begin{minipage}[t]{0.275\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
+	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
+	% \icon{Globe}{12}{\href{https://alyx.vance.me}{alyx.vance.me}}\\
+	\icon{Github}{12}{\href{https://github.com/ThyW}{github.com/ThyW}}\\
+	\icon{Git}{12}{\href{https://gitea.redalder.org/ThyW}{gitea.redalder.org/ThyW}}
+	\icon{Commenting}{12}{Discord: zir \# 6931}\\
+\end{minipage}
+
+\vspace{0.5cm}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\cvsect{{Kto som?}}
+
+\begin{minipage}[t]{0.4\textwidth} % 40% of the page width for the introduction text
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	Budúci študent informatiky na Masarykovej Univerzite v Brne, hobby programátor, počítačový nadšenec, gamer. Som mladý človek, ktorý chce využiť leto a získať čo najviac skúseností v odbore informatiky a softvérového inžinierstva. Som komunikatívny, nadšený a zaujímam sa o to, ako veci fungujú. % Dummy text
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	\begin{barchart}{5.5}
+		\baritem{Rust}{80}
+		\baritem{Python}{70}
+		\baritem{Linux}{70}
+		\baritem{Lua}{60}
+		\baritem{C}{60}
+		\baritem{Git}{40}
+		\baritem{R}{20}
+		\baritem{LaTeX}{15}
+	\end{barchart}
+\end{minipage}
+
+\begin{center}
+	\bubbles{6/Neovim, 4/git, 5/Linux, 3/Bash}
+\end{center}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+
+\cvsect{Vzdelanie}
+
+\begin{entrylist}
+	\entry
+		{2014 -- 2022}
+		{Úplné stredné všeobecné vzdelanie}
+		{Gymnázium Jura Hronca}
+		{Vzdelanie bolo ukončené maturitným vysvedčením}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\cvsect{Pracovné skúsenosti}
+
+\begin{entrylist}
+	\entry
+		{8/2021 -- 6/2022}
+		{Brigádnik}
+		{DANTEM}
+		{Inventarizácia rôznych podnikov a prevádzok}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PROJECTS
+%----------------------------------------------------------------------------------------
+
+\cvsect{Projekty}
+\begin{entrylist}
+	\entry
+		{\href{https://github.com/ThyW/crubwm}{crubwm}}
+		{Simple tiling window manager for the X window system}
+		{Rust}
+		{}
+	\entry 
+		{\href{https://github.com/ThyW/der}{der}}
+		{Declarative configuration file manager with templating capabilities}
+		{Rust}
+		{}
+	\entry
+		{\href{https://github.com/ThyW/2spf}{2spf}}
+		{OSPF Network routing protocol mock implementation and visualizer}
+		{Python}
+		{}
+	\entry
+		{\href{https://github.com/ThyW/ksi}{ksi}}
+		{Repository containing all my work on the 2021/2022 edition of the Korešponenční seminář z informatiky online competition organized by Masarykova Univerzita}
+		{Python}
+		{}
+	\entry
+		{\href{https://gitea.redalder.org/ThyW/camptules}{camptules}}
+		{Discord music bot}
+		{Rust}
+		{}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	ADDITIONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+
+	\cvsect{Jazyky}
+	
+	\textbf{Slovenský} - materinský jazyk\\
+	\textbf{Anglický} - úroveň B2 - maturitná skúška\\
+	\textbf{Nemecký} - mierne pokročilý
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.5\textwidth}
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+	
+	\cvsect{Záujmy}
+	
+	Medzi moje záujmy patrí programovanie a práca na mojich hobby projektoch, počúvanie podcastov a pozeranie live-streamov hlavne z odboru informačných technológii a softvérového inžinierstva, čítanie programátorských blogov, čítanie/počúvanie kníh, hudba.
+\end{minipage}
+
+\end{document}
